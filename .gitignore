@@ -1,0 +1,11 @@
+*.aux
+*.log
+*.pdf
+*synctex*
+*~
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+paperNotes.bib
+paper.out
