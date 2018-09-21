@@ -297,7 +297,7 @@ While this field breaks both time-reversal ($T$) and two-fold rotational ($C_2$)
 and tilting the Dirac cone. To observe this tilt, consider the linearized Hamiltonian in the vicinity of this node: 
 \e{
 H & =\alpha\left[\left(\sigma_y-\frac{{\hbar^2}\zpar}{m\alpha^2}\right)\delta k_{x}-\delta k_{y}\sigma_{x}\right]+\epsilon_{0}.}
-When $|\hbar^2\zpar|>|m\alpha^2|$, the Dirac cone tilts over in the $x$ direction, leading to a Lifshitz transition  of the constant-energy band contours -- from circular to hyperbolic (in the linearized approximation), as illustrated in Fig. \ref{fig:RZ}(c). An over-tilted Dirac cone shall be referred to as type-II. Our case study of a II-Dirac point  connects  two electron-like  pockets [cf.\ \fig{fig:RZ}(a,c)], and  differs from previous case studies [Obrien, AALG] that connect an electron- and hole-like pocket.
+When $|\hbar^2\zpar|>|m\alpha^2|$, the Dirac cone tilts over in the $x$ direction, leading to a Lifshitz transition  of the constant-energy band contours -- from circular to hyperbolic (in the linearized approximation), as illustrated in Fig. \ref{fig:RZ}(c). An over-tilted Dirac cone shall be referred to as type-II. Our case study of a II-Dirac point  connects  two electron-like  pockets [cf.\ \fig{fig:RZ}(a,c)], and  differs from previous case studies [OBrien, AALG] that connect an electron- and hole-like pocket.
 
 \begin{figure}
 \includegraphics[width=1.0\columnwidth]{RZ.png}
@@ -335,7 +335,8 @@ The adiabatic phase $\tilde{\lambda}_{\pm}$ is the sum of a dynamical phase ${\p
 
 \begin{figure}
 \includegraphics[width=1.0\columnwidth]{blochsphere.png}
-\caption{Energy dependence of the single-band Berry phase for inner (upper panel) and outer (lower panel) orbits, denoted $\phi_-^B$ and $\phi_+^B$ respectively. $\phi_{\pm}^B$  equals half the solid angle subtended by the three-vector ${\pm} \bd(\bk)$,[Berry] where  $\bd{=}({-}\alpha k_y$,$Z_\parallel{+}\alpha k_x,{-}Z_\perp$) is obtained from expressing the effective Hamiltonian [cf.\ Eq. (\ref{calHRZ})] as $\sum_jd_j\sigma_j$.  The solid angles are enclosed by blue outlines and the energy is measured from $\epsilon_0$ [cf.\ Eq. (\ref{whereisdiracpoint})].\label{fig:blochsphere}}
+\caption{Solid-angle representation of  the single-band Berry phase $\phi_{\pm}^B$ for inner (subscript $-$, upper panel) and outer ($+$, lower panel) orbit, at various energies close to the Dirac point $\epsilon_0$ [cf.\ Eq. (\ref{whereisdiracpoint})]. The decomposition of the effective Hamiltonian [cf.\ Eq. (\ref{calHRZ})] into sums of Pauli matrices ($\calh{=}\sum_jd_j\sigma_j$) defines a three-vector $\bd{=}({-}\alpha k_y$,$Z_\parallel{+}\alpha k_x,{-}Z_\perp$).
+ $\phi_{\pm}^B$  equals half the solid angle subtended by   ${\pm} \bd(\bk)$ \textbf{[I wasn't  careful about minus signs here]} as $\bk$ is varied along the outer/inner orbit.[Berry]   These angles are indicated in the figure by blue outlines.\label{fig:blochsphere}}
 \end{figure}
 
 Our quantization rule [\qq{eq:rule}{eq:H1}], with $\A$ having the form of \q{propinplanezeeman}, may be equivalently expressed as
@@ -404,7 +405,7 @@ $T_{l^2}$ above is the period of quantum oscillations (in the absence of spin-or
 
 %a non-crossing rule also applies to Landau-level quasidegeneracies. Equivalently, we would show that
 
-\subsection{Codimension analysis in the absence of symmetry}\la{sec:introducecodimension}
+\subsection{Codimension analysis without symmetry, and with band-conservation symmetry}\la{sec:introducecodimension}
 
 
 In the absence of symmetry,  eigenvalue-degeneracies of the unitary propagator $\A$ [cf. \q{eq:prop}] are attainable by tuning three real parameters. Analogously, it is well known (as the non-crossing rule in quantum theory[von Neumann,wigner]) that eigenvalue-degeneracies of complex, finite-dimensional matrix Hamiltonians are also attainable by tuning three real parameters.
@@ -497,12 +498,16 @@ with $\sum_{j=1}^4r_j^2{=}1$. It follows that $r_2{=}0$ is a necessary and suffi
 %If $C_2$ were the only symmetry, then three parameters would be needed to tune ${\cal \bar{A}}{=}{-}I$. Generally, additional symmetry further constrains $\bR$, which may effectively reduce the number of tuning parameters.  This explains why the ${\cal \bar{A}}{=}{-}I$ manifolds, as plotted in \fig{fig:dgn}(a)], are line nodes instead of point nodes: these line nodes lie in either the $\alpha{=}0$ or the $\beta{=}0$ plane, both of which are $\mathfrak{c}_{\infty}$-symmetric.\footnote{To complete the explanation, \textbf{speculative:} the space of $C_{\infty}$-symmetric unitaries lie on lines in $\bR$-space that intersect $\bR{=}(0,1,0,0)$ [the point node]. A singular coordinate transformation to $\br$-space maps these $C_{inf}$-symmetric lines to $\mathfrak{c}_{inf}$-symmetric planes, and the point node to a line node.}
 
 
-\subsection{Rotational symmetric magnetic breakdown}\la{sec:rotsymmbreakdown}
+\subsection{Codimension reduction for 2DEG with distinct, symmetry-related II-Dirac points}\la{sec:rotsymmbreakdown}
 
 \begin{figure}
 \includegraphics[width=1.0\columnwidth]{Cn-breakdown.png}
 \caption{Cyclotron orbits for $\mathfrak{c}_2$-symmetric [(a)] and $\mathfrak{c}_3$-symmetric [(b)] breakdown. Bottom right inset of (a) presents an enlarged view of breakdown junction, where purple rectangle has area $S_{\sma{\square}}$.\label{fig:Cn-breakdown}}
 \end{figure}
+
+
+In the adiabatic regime of two quasidegenerate orbits, we have found [in \s{sec:introducecodimension}] that the codimension for $\cala{=}{\pm} I$ is unity. Here we investigate how relaxing adiabaticity -- in the presence of a discrete $N$-fold rotational symmetry $\mathfrak{c}_N$  -- changes this result. One simple way to relax adiabaticity is to incorporate Landau-Zener tunneling at II-Dirac points. Since a II-Dirac cone is tilted in a special direction, a II-Dirac point cannot be the center of a rotational symmetry; the minimal model with $\mathfrak{c}_N$ symmetry thus requires $N$ distinct but symmetry-related II-Dirac points. For $N{=}2$, we will demonstrate that the codimension for $\cala{=}I$ remains unity, in accordance with the symmetric-coordinate analysis of \q{proprashba}; the existence of Landau-level quasi-crossings (over the B axis) will be explained in terms of the destructive interference of two tunneling Feynman paths 
+
 
 Quasidegenerate orbits feature tunneling everywhere along the cyclotron orbit and therefore demand a quantization rule that incorporates both tunneling and single band evolution of wave packets. Sometimes, the coherent evolution of wave packets and tunneling can be decoupled in the quantization rule in weak field limit, as exemplified by magnetic breakdown in Rashba-Zeeman model in Sec. \ref{sec:inplanezeeman}. Let us further explore single-parameter tunability of Landau-level quasidegeneracies in this limit by introducing a rotational symmetric Hamiltonian with isolated breakdown junctions at several isolated $\bk$ points. Besides being an interesting toy model, this Hamiltonian provides some insights of stability of Landau-level quasidegeneracies by perturbing from two otherwise independent orbits.
 
@@ -563,24 +568,24 @@ An analogous model with $\mathfrak{c}_3$-related II-Dirac points  is illustrated
 \subsection{The ten-fold table for symmetry constrained codimensions}\la{sec:tenfold}
 
 \begin{table}
-\begin{tabular*}{\columnwidth}{l@{\extracolsep{\fill}}ccccc}
+\begin{tabular*}{\columnwidth}{l@{\extracolsep{\fill}}cccccc}
 \hlineB{2.0}
-             & $u$ & $s$ & quasi. & $g$ & codim.\\
+             no. & description & $u$ & $s$ & quasi. & $g$ & codim.\\
 \hline
-$\forall \bk \in \frako_0$, $g\circ \bk=\bk$ & 0 & 0 & $\surd$ & $\breve{g}\propto I$ & 3  \\
-    &  &  & & $\breve{g}\not\propto I$ & 1 \\
-    & 0 & 1 & & $g^2=1$ & 1  \\
-    &  &  & & $g^2=-1$ & 3  \\
-$|g\circ \frako_0| = |\frako_0|$ & 0 & 0 & $\surd$ & - & 1   \\
-$\exists \bk \in \frako_0, g\circ \bk\ne\bk$    & 0 & 1 & & - & 1   \\
-    & 1 & 0 & & $\breve{g} \propto \sigma_z$ & 2  \\
-    &  &  & & $\breve{g} \not\propto \sigma_z$ & 0  \\
-    & 1 & 1 & $\surd$ & $g^2=1$ & 2  \\
-    &  &  & & $g^2=-1$ & 0  \\
-$|g\circ \frako_0| \ne |\frako_0|$ & 0 & 0 & $\surd$ & - & 3 \\
-    & 0 & 1 & & - & 3 \\
-    & 1 & 0 & & - & 3 \\
-    & 1 & 1 & $\surd$ & - & 3 \\
+1 &$\forall \bk \in \frako_0$, $g\circ \bk=\bk$  & 0 & 0 & $\surd$ & $\breve{g}\propto I$ & 3  \\
+ &    &  &  & & $\breve{g}\not\propto I$ & 1 \\
+2 &    & 0 & 1 & & $g^2=1$ & 1  \\
+ &    &  &  & & $g^2=-1$ & 3  \\
+3 & $|g\circ \frako_0| = |\frako_0|$ & 0 & 0 & $\surd$ & - & 1   \\
+4 & $\exists \bk \in \frako_0, g\circ \bk\ne\bk$    & 0 & 1 & & - & 1   \\
+5 &    & 1 & 0 & & $\breve{g} \propto \sigma_z$ & 2  \\
+ &    &  &  & & $\breve{g} \not\propto \sigma_z$ & 0  \\
+6 &    & 1 & 1 & $\surd$ & $g^2=1$ & 2  \\
+&    &  &  & & $g^2=-1$ & 0  \\
+7 & $|g\circ \frako_0| \ne |\frako_0|$ & 0 & 0 & $\surd$ & - & 3 \\
+8 &    & 0 & 1 & & - & 3 \\
+9 &    & 1 & 0 & & - & 3 \\
+10 &    & 1 & 1 & $\surd$ & - & 3 \\
 \hlineB{2.0}
 \end{tabular*}
 \caption{Codimensions of degeneracy manifold of two-by-two propagator $\A$ under constraints of different type of symmetries. The first column defines how the symmetry act on the cyclotron orbit, where $g\circ \bk$ (resp. $g\circ\frako$) is the image of $\bk$ (resp. $\frako$) under the the action of $g$. $|g\circ \frako=\frako|$ indicates the image of the orbit coincides with itself, regardless of orientation of the orbit. The next two columns are intrinsic properties of $g$. $u=0$ (resp. $u=1$) indicates the symmetry is a proper (resp. improper) transformation of the plane of the cyclotron orbit ($k_z=\text{constant}$). $g$ of $u=0$ (resp. $u=1$) does not flip (resp. flips) the orientation of the cyclotron orbit. $s=0$ (resp. $s=1$) indicates the symmetry is unitary (resp. antiunitary). In magnetic groups, antiunitary symmetry operations contain time reversal symmetry. The fourth column indicates whether this symmetry class applies to quasidegenerate propagator $\A$. For the five classes not applicable here, they are useful for Landau levels of fully degenerate bands, as discussed in Sec. \ref{sec:discussion}. The fifth column specifies additional conditions (on the representation of $g$) which are necessary to obtain a unique answer for codimension. $\breve{g}$ is the diagonalized, unitary matrix representation of $g$ in the degenerate subspace. The last column is codimension of the degeneracy manifold.\label{table:codimension}}
