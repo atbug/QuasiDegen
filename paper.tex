@@ -301,7 +301,7 @@ When $|\hbar^2\zpar|>|m\alpha^2|$, the Dirac cone tilts over in the $x$ directio
 
 \begin{figure}
 \includegraphics[width=1.0\columnwidth]{RZ.png}
-\caption{(a) Trefoille-shaped cyclotron orbit for the Rashba-Zeeman model at the energy of the Dirac point. The orbit is drawn over the  spin-splitting field ($d_x,d_y$) of the Hamiltonian $H_{RZ}{=}d_0(\bk)I{+}d_x(\bk)\sigma_x{+}d_y(\bk)\sigma_y$, with $d_j$ obtainable from \q{eq:RZ-Hamiltonian}. The wavefunction along the inner (resp.\ outer) component of the trefoille orbit has its pseudospin aligned parallel (resp.\ anti-parallel) to the spin-orbit field. (b) Black dashed lines illustrate a zeroth-order approximation of the Landau levels (assuming Klein tunneling); the leading-order correction is indicated by red lines. The Dirac point lies at $10$meV. Parameters for (b): $m$: 0.02$\hbar^2$/eV$\cdot$\AA$^2$, $\alpha$: 0.05eV$\cdot$\AA, $Z_\parallel$: 0.001eV. (c) A sketch of cyclotron orbits of Rashba Hamiltonian with in-plane magnetic field. (d) For various configurations ($\alpha$, $Z_\parallel$) of $H_{RZ}$, we plot in left panel $\text{error}:=|\epsilon_\text{rule}-\epsilon_\text{exact}|/\var_c$ for a single Landau level that is closest to $\epsilon_0$ in Eq. (\ref{whereisdiracpoint}), where $\epsilon_\text{rule}$ is determined by Eq. (\ref{eq:rule}) and $\epsilon_{\text{exact}}$ is obtained by numerical diagonalization of the Peierls-Onsager Hamiltonian $H_{RZ}(\bK)$. Corresponding $l^2 \delta S^2/S$ are plotted in right panel. We only plotted in region where $0.4<\epsilon_0<1.0$(eV).\cite{RZfignote} Parameters for (d): $m$: 0.01$\hbar^2$/eV$\cdot$\AA$^2$, $l=100$\AA. \label{fig:RZ}}
+\caption{(a) Trefoille-shaped cyclotron orbit for the Rashba-Zeeman model at the energy of the Dirac point. The orbit is drawn over the  spin-splitting field ($d_x,d_y$) of the Hamiltonian $H_{RZ}{=}d_0(\bk)I{+}d_x(\bk)\sigma_x{+}d_y(\bk)\sigma_y$, with $d_j$ obtainable from \q{eq:RZ-Hamiltonian}. The wavefunction along the inner (resp.\ outer) component of the trefoille orbit has its pseudospin aligned parallel (resp.\ anti-parallel) to the spin-orbit field. (b) Black dashed lines illustrate a zeroth-order approximation of the Landau levels (assuming Klein tunneling); the leading-order correction is indicated by red lines. Exact Landau levels by numerical diagonalization are plotted as green dots. The Dirac point lies at $6.4$eV. Parameters for (b): $m$: 0.05$\hbar^2$/eV$\cdot$\AA$^2$, $\alpha$: 0.05eV$\cdot$\AA, $Z_\parallel$: 0.04eV. (c) A sketch of cyclotron orbits of Rashba Hamiltonian with in-plane magnetic field. (d) For various configurations ($\alpha$, $Z_\parallel$) of $H_{RZ}$, we plot in left panel $\text{error}:=|\epsilon_\text{rule}-\epsilon_\text{exact}|/\var_c$ for a single Landau level that is closest to $\epsilon_0$ in Eq. (\ref{whereisdiracpoint}), where $\epsilon_\text{rule}$ is determined by Eq. (\ref{eq:rule}) and $\epsilon_{\text{exact}}$ is obtained by numerical diagonalization of the Peierls-Onsager Hamiltonian $H_{RZ}(\bK)$. Corresponding $l^2 \delta S^2/S$ are plotted in right panel. We only plotted in region where $0.4<\epsilon_0<1.0$(eV).\cite{RZfignote} Parameters for (d): $m$: 0.01$\hbar^2$/eV$\cdot$\AA$^2$, $l=100$\AA. \label{fig:RZ}}
 \end{figure}
 
 In addition to the in-plane field, let us also apply an out-of-plane field $B_{\perp}$, with associated magnetic length $\lper{=}\sqrt{\hbar/eB_{\perp}}$, cyclotron energy $\var^{\sma{\perp}}_c{:}{=}\hbar^2/m\lper^2{:}{=}\hbar \omega_c^{\sma{\perp}}{:}{=}h/T_c^{\sma{\perp}}$ and Zeeman coupling to the spin magnetic moment:  $\zper{:}{=}{g_s}\mu_B B_{\perp}/2$. We shall assume  $1/\lper^2S{\ll}1$, where $S$ is the area of the zeroth-order orbit (with effective mass $m$ and radius $k_E{=}\sqrt{2mE}/\hbar$). For energies much greater than $m\alpha^2$ and $\zpar$, the quasidegeneracy condition ($\delta S/S{\ll}1$) is met, where $\delta S$ is the differential area induced by both spin-orbit and in-plane Zeeman couplings [see \fig{fig:RZ}(a)].  The smallness of $1/\lper^2S$ and $\delta S/S$ (with finite ratio $\lper^2\delta S$) justifies our application of the quantization rule [\qq{eq:rule}{eq:H1}],  with the effective Hamiltonian: 
@@ -311,9 +311,9 @@ In addition to the in-plane field, let us also apply an out-of-plane field $B_{\
 $t$ here is a time variable which parametrizes the zeroth-order orbit:
 $\bk(t){=}({-}k_E \cos \omega_c^{\sma{\perp}} t, k_E \sin \omega_c^{\sma{\perp}} t )$. In the momentum-independent spin basis of \q{calHRZ}, the non-Abelian Berry connection vanishes, hence the generalized Zeeman interaction $B_{\sma{\perp}}\calm$ simply reduces to the Zeeman interaction with the spin  moment: $Z_\perp\sigma_{z}$.
 
-As alluded to in \s{sec:qtznrules}, the adiabatic limit of two independent orbits does not exist if the two spin-orbit-split orbits exactly intersect at a II-Dirac point. To investigate this failure of adiabaticity, let us study the Landau levels at energies close to the II-Dirac point ($\epsilon_0$). We focus first on the regime where, on average (over $\frako_0$), the energy splitting $|\delta \var_+{-}\delta \var_-|$ [cf.\ \q{eq:RZ-Hamiltonian}] is much greater than $Z_\perp$. This implies that the split orbits do not appreciably hybridize -- except in the vicinity of the II-Dirac point where orbits (nearly) touch.  Near this touching point (where $t{=}0$), the dynamics of a spinor electron is described by linearizing $\H$ [cf.\ \q{calHRZ}] with respect to $t$:
+As alluded to in \s{sec:qtznrules}, the adiabatic limit of two independent orbits does not exist if the two spin-orbit-split orbits exactly intersect at a II-Dirac point. To investigate this failure of adiabaticity, let us study the Landau levels at energies close to the II-Dirac point ($\epsilon_0$). We focus first on the regime where, on average (over $\frako_0$), the energy splitting $|\delta \var_+{-}\delta \var_-|$ [cf.\ \q{eq:RZ-Hamiltonian}] is much greater than $B_\perp|\calm_{\sma{+-}}|$. This implies that the split orbits do not appreciably hybridize -- except in the vicinity of the II-Dirac point where orbits (nearly) touch.  Near this touching point (where $t{=}0$), the dynamics of a spinor electron is described by linearizing $\H$ [cf.\ \q{calHRZ}] with respect to $t$:
 \e{
-\calh = \alpha k_{E} \,\omega^{\sma{\perp}}_c t\,\sigma_x+(Z_\parallel-\alpha k_{E})\sigma_y-Z_\perp\sigma_z,\la{effhamIIDirac}
+\calh = -\alpha k_{E}\omega^{\sma{\perp}}_c t\,\sigma_x+(Z_\parallel-\alpha k_{E})\sigma_y-Z_\perp\sigma_z,\la{effhamIIDirac}
 }
 The eigenbasis of $\sigma_x$ corresponds to two diabatic levels with characteristic slope $v_d{:}{=}\alpha k_E\omega^{\sma{\perp}}_c$; near $t{=}0$, the diabatic levels anticross  due to the hybridization terms proportional to $\sigma_{y,z}$. Generally, the probability of tunneling across the hybridization-induced barrier is  $\rho^2{=}\exp(-2\pi\barmu)$, with $\barmu{=}{E_g}^2/{2v_d \hbar}$ and $E_g$ the energy gap at the center of the anticrossing;[Landau and lifshitz, Wittig] in this context,
 \e{\barmu=\frac{Z_\perp^2+(Z_\parallel-\alpha k_{E})^2}{2\alpha k_{E}\var^{\sma{\perp}}_c}, \la{mu1}}
@@ -326,7 +326,7 @@ which is a connection formula that matches the two-component semiclassical (WKB)
 
 Away from the II-Dirac point, an electron undergoes adiabatic (band-conserving) dynamics. The time-ordered, coherent process of Landau-Zener tunneling/transmission and adiabatic dynamics is described by the propagator:
 \e{{\A}= \matrixtwo{\tau e^{i\bar{\varphi}}}{-\rho}{\rho}{\tau e^{-i\bar{\varphi}}} \diagmatrix{e^{i\tilde{\lambda}_+}}{e^{i\tilde{\lambda}_-}}. \la{propinplanezeeman}}
-The adiabatic phase $\tilde{\lambda}_{\pm}$ is the sum of a dynamical phase ${\pm} l^2 \delta S$ and  the single-band Berry phase $\phi^B_\pm$, for the outer ($+$) and inner ($-$) orbit respectively. At energies far above the Dirac point ($|E{-}\epsilon_0|{\gg}|Z_{\perp}|$) where the Zeeman interaction is negligible, both orbits encircle the Dirac point and hence $\phi_{\pm}^B{\approx}{\pm}\pi$; far below the Dirac point, neither orbit encircles the Dirac point, leading to $\phi_{\pm}^B{\approx}0$. At intermediate energies, $\phi_{+}^B$ (resp.\ $\phi_{-}^B$) is a continuous and decreasing (resp.\ increasing) function of energy, as supported by the Bloch-sphere argument in Fig. \ref{fig:blochsphere}.
+The adiabatic phase $\tilde{\lambda}_{\pm}$ is the sum of a dynamical phase ${\pm} l^2 \delta S/2$ and  the single-band Berry phase $\phi^B_\pm$, for the outer ($+$) and inner ($-$) orbit respectively. At energies far above the Dirac point ($|E{-}\epsilon_0|{\gg}|Z_{\perp}|$) where the Zeeman interaction is negligible, both orbits encircle the Dirac point and hence $\phi_{\pm}^B{\approx}{\pm}\pi$; far below the Dirac point, neither orbit encircles the Dirac point, leading to $\phi_{\pm}^B{\approx}0$. At intermediate energies, $\phi_{+}^B$ (resp.\ $\phi_{-}^B$) is a continuous and decreasing (resp.\ increasing) function of energy, as supported by the Bloch-sphere argument in Fig. \ref{fig:blochsphere}.
 
 
 %consist of two parts: dynamical phase $\lper^2 \delta S$ with $\delta S'$ now accounting for both spin-split and Zeeman-split area corrections,
@@ -358,14 +358,14 @@ To derive the above equation, we have utilized $\phi^B_-{+}\phi^B_+{=}0$, which 
 %To appreciate this, consider the regime $\rho^2{\lesssim}1$, where a single harmonic (corresponding to the trefoille orbit) is dominant. Viewing $\tau{=}\sqrt{1{-}\rho^2}$ as a small parameter, the zeroth-order Landau levels $E_n^0(B)$ [as obtained from \q{trefoillerule}] has been shown to be periodic in $E$ and $l^2$ (on short scales associated to the large-action trefoille orbit). 
 
 
-To recapitulate, $E_n^0(B)$ [cf.\ \q{trefoillerule}] exhibits a periodicity on short scales associated to the large action of the trefoille orbit. This small-scale periodicity is lost due to  finite-$\tau$ corrections, yet a longer-range correlation (associated to the smaller differential action $\delta S$ between spin-split orbits) persists, as shown by the first-order-in-$\tau$ correction:\footnote{The general form of this perturbative calculation can be found in Sec. IX-E of [100page]. } 
+To recapitulate, $E_n^0(B)$ [cf.\ \q{trefoillerule}] exhibits a periodicity on short scales associated to the large action of the trefoille orbit. This small-scale periodicity is lost due to  finite-$\tau$ corrections, yet a longer-range correlation (associated to the smaller differential action $\delta S$ between spin-split orbits) persists, as shown by the first-order-in-$\tau$ correction:\footnote{The general form of this perturbative calculation can be found in Sec. IX-E of [100page].} 
 \e{&\delta E_n(B) = \f{(-1)^{n+1}}{2\pi} \tau \var_c \cos\bigg(\f{l^2\delta S}{{2}}+\f{\phi_+^B-\phi_-^B}{2}-\bar{\varphi}\bigg) \lin
     &\substack{\sma{Z_{\perp}{\rightarrow}0}\\ \approx} \f{(-1)^{n+1}}{4\sqrt{2\pi}}  \var_c \f{(E-\epsilon_0)l}{\alpha(\epsilon_0/Z_{\parallel})^{3/2}}\cos\bigg(\f{l^2\delta S}{{2}}-\bar{\varphi}\bigg),\label{RZfirstorderE}}
-with the right-hand side (of each line) evaluated at $E_n^0(B)$. The second line of \q{RZfirstorderE} has greater utility where $m{\ll}m_0$. 
+with the right-hand side (of each line) evaluated at $E_n^0(B)$. The second line of \q{RZfirstorderE} has greater utility where $m{\ll}m_0$. \red{This first order corrections of Landau levels are plotted in Fig. \ref{fig:RZ}(b) as red solid lines. The oscillation in Eq. (\ref{RZfirstorderE}) cannot be observed due to the smallness of $\delta S$. However, as expected from Eq. (\ref{RZfirstorderE}), first order correction have alternative signs for every Landau levels, which is confirmed by exact diagonalization [cf. Fig. \ref{fig:RZ}](b).}
 
 
 
-If the quasidegenerate orbits are appreciably hybridized ( $|\delta \var_+-\delta \var_-|{\lesssim}Z_{\perp}$ on average), our quantization rule \qq{eq:rule}{eq:H1} remains valid but the propagator $\cala$ no longer has the closed analytic form of \q{propinplanezeeman}. We may anyway diagonalize $\cala$ numerically, and compare the resultant semiclassical Landau levels with the exact diagonalization of $H_{RZ}(\boldsymbol{K})$; to our knowledge, there exists no analytic solution of $H_{RZ}(\boldsymbol{K})$ for generic values of $\alpha,\zpar$ and $B_{\perp}$. For fixed  $B_{\perp}$ and a range of $(\alpha,\zpar)$ wherein  $l^2\delta S^2/S$ varies over $[0,0.2]$, the difference between semiclassical and exact Landau levels never exceeds  0.3\% of the cyclotron energy $\var_c$; this difference shows a strong positive correlation with $l^2\delta S^2/S$ [compare the left and right panels of Fig.\ \ref{fig:RZ} (d)], just like in the Rashba-Dresselhaus model. 
+If the quasidegenerate orbits are appreciably hybridized ( $|\delta \var_+{-}\delta \var_-|{\lesssim}B_\perp|\calm_{\sma{+-}}|$ on average), our quantization rule \qq{eq:rule}{eq:H1} remains valid but the propagator $\cala$ no longer has the closed analytic form of \q{propinplanezeeman}. We may anyway diagonalize $\cala$ numerically, and compare the resultant semiclassical Landau levels with the exact diagonalization of $H_{RZ}(\boldsymbol{K})$; to our knowledge, there exists no analytic solution of $H_{RZ}(\boldsymbol{K})$ for generic values of $\alpha,\zpar$ and $B_{\perp}$. For fixed  $B_{\perp}$ and a range of $(\alpha,\zpar)$ wherein  $l^2\delta S^2/S$ varies over $[0,0.2]$, the difference between semiclassical and exact Landau levels never exceeds  0.3\% of the cyclotron energy $\var_c$; this difference shows a strong positive correlation with $l^2\delta S^2/S$ [compare the left and right panels of Fig.\ \ref{fig:RZ} (d)], just like in the Rashba-Dresselhaus model. 
 
 
 For the special case of $\alpha{=}0$, the spectra of $H_{RZ}(\boldsymbol{K})$ and $\mathcal{A}[\mathfrak{o}]$ are both exactly soluble, hence it is possible to verify that the exact and semiclassical Landau levels match perfectly for every level index $n$ without any approximation; the latter is obtained from our rule [Eq.\ (\ref{eq:rule})], with the eigenphases of $\A$ equal to 
@@ -502,46 +502,70 @@ with $\sum_{j=1}^4r_j^2{=}1$. It follows that $r_2{=}0$ is a necessary and suffi
 
 \begin{figure}
 \includegraphics[width=1.0\columnwidth]{Cn-breakdown.png}
-\caption{Cyclotron orbits for $\mathfrak{c}_2$-symmetric [(a)] and $\mathfrak{c}_3$-symmetric [(b)] breakdown. Bottom right inset of (a) presents an enlarged view of breakdown junction, where purple rectangle has area $S_{\sma{\square}}$.\label{fig:Cn-breakdown}}
+\caption{Cyclotron orbits for $\mathfrak{c}_2$-symmetric [(a)] and $\mathfrak{c}_3$-symmetric [(b)] breakdown. \textbf{[Please add dashed line indicating zeroth order orbit, and label one of the crescents by $\delta S/4$ and another by $\delta S/6$. It would also be good to show the energy-momentum dispersion and the orbits (the analog of Fig 3c).]} Bottom right inset of (a) presents an enlarged view of the breakdown junction, where the purple rectangle has area $S_{\sma{\square}}$.\label{fig:Cn-breakdown}}
 \end{figure}
 
 
-In the adiabatic regime of two quasidegenerate orbits, we have found [in \s{sec:introducecodimension}] that the codimension for $\cala{=}{\pm} I$ is unity. Here we investigate how relaxing adiabaticity -- in the presence of a discrete $N$-fold rotational symmetry $\mathfrak{c}_N$  -- changes this result. One simple way to relax adiabaticity is to incorporate Landau-Zener tunneling at II-Dirac points. Since a II-Dirac cone is tilted in a special direction, a II-Dirac point cannot be the center of a rotational symmetry; the minimal model with $\mathfrak{c}_N$ symmetry thus requires $N$ distinct but symmetry-related II-Dirac points. For $N{=}2$, we will demonstrate that the codimension for $\cala{=}I$ remains unity, in accordance with the symmetric-coordinate analysis of \q{proprashba}; the existence of Landau-level quasi-crossings (over the B axis) will be explained in terms of the destructive interference of two tunneling Feynman paths 
+In the adiabatic limit of two quasidegenerate orbits, we have found [in \s{sec:introducecodimension}] that the codimension for $\cala{=}{\pm} I$ is unity. Here we investigate how this result changes as adiabaticity is relaxed by Landau-Zener tunneling -- that respects a discrete $N$-fold rotational symmetry ($\mathfrak{c}_N$). Since a II-Dirac cone is tilted in a special direction, a II-Dirac point cannot be the center of a rotational symmetry; the minimal model with $\mathfrak{c}_N$ symmetry thus requires $N$ distinct but symmetry-related II-Dirac points. For $N{=}2$, we will demonstrate that the codimension for $\cala{=}I$ (but not for $\cala{=}{-}I$) remains unity, in accordance with the symmetric-coordinate analysis of \q{proprashba}; the persistence of  Landau-level quasidegeneracies  (at finite tunneling probability) will be demystified in terms of the destructive interference of tunneling Feynman paths. For $N{=}3$, we will find that two of three Landau-level quasi-crossings are perturbatively stable against tunneling, but even these will destabilize beyond a critical tunneling strength. 
 
 
-Quasidegenerate orbits feature tunneling everywhere along the cyclotron orbit and therefore demand a quantization rule that incorporates both tunneling and single band evolution of wave packets. Sometimes, the coherent evolution of wave packets and tunneling can be decoupled in the quantization rule in weak field limit, as exemplified by magnetic breakdown in Rashba-Zeeman model in Sec. \ref{sec:inplanezeeman}. Let us further explore single-parameter tunability of Landau-level quasidegeneracies in this limit by introducing a rotational symmetric Hamiltonian with isolated breakdown junctions at several isolated $\bk$ points. Besides being an interesting toy model, this Hamiltonian provides some insights of stability of Landau-level quasidegeneracies by perturbing from two otherwise independent orbits.
+%Quasidegenerate orbits feature tunneling everywhere along the cyclotron orbit and therefore demand a quantization rule that incorporates both tunneling and single band evolution of wave packets. Sometimes, the coherent evolution of wave packets and tunneling can be decoupled in the quantization rule in weak field limit, as exemplified by magnetic breakdown in Rashba-Zeeman model in Sec. \ref{sec:inplanezeeman}. Let us further explore single-parameter tunability of Landau-level quasidegeneracies in this limit by introducing a rotational symmetric Hamiltonian with isolated breakdown junctions at several isolated $\bk$ points. Besides being an interesting toy model, this Hamiltonian provides some insights of stability of Landau-level quasidegeneracies by perturbing from two otherwise independent orbits.
 
-We introduce a $\mathfrak{c}_2$-symmetric analog of the Rashba-Zeeman model:
-\e{H=\f{\red{\hbar^2}k^2}{2m_1}+ \bigg(\f{\red{\hbar^2}k^2}{2m_2}-\mu\bigg)\sigma_z +wk_y\sigma_x,\la{modelC2breakdown}}
-where $0<m_1{\ll}m_2,0<\mu$. For simplicity, we interpret the Pauli matrices as  spin operators, and the two right-most terms of  \q{modelC2breakdown} as a spin-orbit coupling. The $\mathfrak{c}_2$ symmetry manifests as $\sz H(\bk)\sz{=}H({-}\bk)$, and relates 
+We begin with a minimal, $\mathfrak{c}_2$-symmetric model:
+\e{H=\f{{\hbar^2}k^2}{2m_1}+ \bigg(\f{{\hbar^2}k^2}{2m_2}-\mu\bigg)\sigma_z +wk_y\sigma_x,\la{modelC2breakdown}}
+with $0{<}m_1{\ll}m_2$ and positive $\mu$. For simplicity, we interpret the Pauli matrices as  spin operators, and the two right-most terms of  \q{modelC2breakdown} as a spin-orbit coupling. The $\mathfrak{c}_2$ symmetry manifests as $\sz H(\bk)\sz{=}H({-}\bk)$, and relates 
 two Dirac points at
-\e{\bar{k}_x = \pm\sqrt{2m_2\mu}/\red{\hbar},\;\bar{k}_y=0,\;\epsilon_{0}=\frac{m_2}{m_1}\mu.}
+\e{\bar{k}_x = \pm\sqrt{2m_2\mu}/{\hbar},\;\bar{k}_y=0,\;\epsilon_{0}=\frac{m_2}{m_1}\mu.}
 In the vicinity of either point, the  Hamiltonian has the linearized form 
-\e{H_{\pm} =\pm \red{\hbar}\sqrt{\f{2\mu}{m_2}}\bigg(\frac{m_2}{m_1}+\sz\bigg)\delta k_x+w\delta k_{y}\sx+\epsilon_0, \la{linearHam2}}
-from which we deduce that both Dirac points are  type-II if $m_1{<}m_2$; this condition is henceforth assumed.\footnote{Actually we will impose the stronger condition $m_1{\ll}m_2$, to ensure that the relative change in band velocity (due to the spin-orbit coupling) is small. This is a consistency requirement of our WKB theory, as explained in \app{app:quantizationruleproof}.} 
+\e{H_{\pm} =\pm {\hbar}\sqrt{\f{2\mu}{m_2}}\bigg(\frac{m_2}{m_1}+\sz\bigg)\delta k_x+w\delta k_{y}\sx+\epsilon_0, \la{linearHam2}}
+from which we deduce that both Dirac points are  type-II if $m_1{<}m_2$; we further assume $m_1{\ll}m_2$ so that the quasidegeneracy condition is satisfied. 
+
+%this condition is henceforth assumed.\footnote{Actually we will impose the stronger condition $m_1{\ll}m_2$, to ensure that the relative change in band velocity (due to the spin-orbit coupling) is small. This is a consistency requirement of our WKB theory, as explained in \app{app:quantizationruleproof}.} 
 
 %; near each point the orbits are well approximated by two hyperbolic arms
 %$\phi_j{=}\int_{\sma{0}}^{\sma{T_c}}\calh_{jj}dt/\hbar$ is simply the cyclotron integral of the corresponding diagonal element of the effective Hamiltonian. 
 
-At energies close to the Dirac point ($E{-}\epsilon_0 {\ll} wm_2(2E/m_1)^{\sma{1/2}}$ \red{[need checking]}), there are two concentric orbits which (nearly) touch at both Dirac points, as illustrated in Fig. \ref{fig:Cn-breakdown} (a). Just as in \q{spinsplitwkb}, we define $\Delta$ as the spin-orbit splitting energy (averaged over the zeroth-order orbit with effective mass $m_1$). In the weak-field regime where $\var_c{=}\red{\hbar^2}/m_1l^2{\ll}\Delta$, interband tunneling is localized to the vicinities of the two II-Dirac points, and occurs with the Landau-Zener probability:
-\e{\rho^2=e^{-2\pi\bar{\mu}}, \; \bar{\mu}=\f{\big(Z_{\perp}^2+(m_1/m_2)^2(E-\epsilon_0)^2\big)l^2}{2w\sqrt{2E/m_1}}. }
-Elsewhere, a semiclassical wavepacket undergoes adiabatic (band-conserving) dynamics. For the upper half ($k_y>0$) of the diagram Fig. \ref{fig:Cn-breakdown}(a), this adiabatic evolution is described by a diagonal unitary matrix in the basis of energy bands; each diagonal entry encodes the slowly-varying semiclassical phase due to $\H$ ($\lambda_a'$ \red{[Let's use $\lambda_j'$ instead of $\delta_\lambda$. The latter is confusing because $\lambda_a\sim l^2 \delta S$. It would be quite confusing if we also let $\delta\lambda_a\sim l^2\delta S$]}) acquired along a spin-split trajectory to the \red{top}. In more detail, $\lambda_{\pm}'{=}{\pm}l^2\delta S/4$ up to a field-independent geometric phase \footnote{due to this field-independent phase, it is not necessary that $\delta\lambda_+=-\delta\lambda_-$}.  
-The time-evolution propagator  describes the time-ordered, coherent process of interband tunneling (as described by the scattering matrix of \q{scattmat})
- and adiabatic dynamics:
-\e{\A&=\red{e^{i(\lambda_+'+\lambda_-')}}\times\nonumber\\
-&\left(\matrixtwo{\tau e^{i\bar{\varphi}}}{-\rho}{\rho}{\tau e^{-i\bar{\varphi}}}\red{\diagmatrix{e^{i\f{\lambda_+'-\lambda_-'}{2}}}{e^{i\f{\lambda_-'-\lambda_+'}{2}}}} \right)^2. \la{propC2breakdown}}
-The two scattering matrices for both Dirac points are identical by $\mathfrak{c}_2$ symmetry; so are the two diagonal propagators corresponding to the left and right halves of the adiabatic dynamics. 
+% In the weak-field regime where $\var_c{=}{\hbar^2}/m_1l^2{\ll}\Delta$,
 
-$\rho{=}0$  describes the adiabatic limit of two independent orbits with differential action $\delta S$. As described earlier in \s{sec:llquasideg}, degeneracies of $\cala$ occur with a periodicity (in $l^2$) of $2\pi/\delta S$, which corresponds to a periodic increment of a single flux quantum for  the differential magnetic flux (between the two spin-split orbits in real space). 
+
+
+
+At energies close to the Dirac point ($E{-}\epsilon_0 {\ll} wm_2(2E/m_1)^{\sma{1/2}}$), there are two concentric orbits which (nearly) touch at both Dirac points, as illustrated in Fig. \ref{fig:Cn-breakdown} (a). For sufficiently weak field, interband tunneling is localized near either II-Dirac point, and occurs with the Landau-Zener probability:
+\e{\rho^2=e^{-2\pi\bar{\mu}}, \; \bar{\mu}=\f{\big(Z_{\perp}^2+(m_1/m_2)^2(E-\epsilon_0)^2\big)l^2}{2w\sqrt{2E/m_1}}. \la{landauzenerc2} }
+Elsewhere, an electron undergoes adiabatic (band-conserving) dynamics. Due to the $\mathfrak{c}_2$ symmetry, the time-evolution propagator over the full cyclotron period is simply the square of the propagator for half the period: 
+\e{\A={e^{i(\tilde{\lambda}_++\tilde{\lambda}_-)}}\left(\matrixtwo{\tau e^{i\bar{\varphi}}}{-\rho}{\rho}{\tau e^{-i\bar{\varphi}}}{\diagmatrix{e^{i\f{\tilde{\lambda}_+-\tilde{\lambda}_-}{2}}}{e^{i\f{\tilde{\lambda}_--\tilde{\lambda}_+}{2}}}} \right)^2. \la{propC2breakdown}}
+The half-period propagator may be taken from \qq{scattmat}{propinplanezeeman}, with  $\bar{\mu}$ here given by \q{landauzenerc2}, and  $\tilde{\lambda}_{\pm}{=}{\pm}l^2\delta S/4$ plus a field-independent geometric phase.
+ 
+
+
+%For the upper half ($k_y{>}0$) of Fig. \ref{fig:Cn-breakdown}(a), this adiabatic evolution is described by a diagonal unitary matrix in the basis of energy bands; the phase of the diagonal entry $\tilde{\lambda}_{\pm}{=}{\pm}l^2\delta S/4$ plus a field-independent geometric phase.  The time-evolution propagator  describes the time-ordered, coherent process of Landau-Zener tunneling/transmission (as described by the scattering matrix of \q{scattmat}) and adiabatic dynamics:
+
+%The two scattering matrices for both Dirac points are identical by $\mathfrak{c}_2$ symmetry; so are the two diagonal propagators corresponding to the left and right halves of the adiabatic dynamics. 
+
+% \footnote{due to this field-independent phase, it is not necessary that $\delta\lambda_+=-\delta\lambda_-$}
+
+
+The necessary and sufficient condition for a degeneracy of $\cala$ is \begin{align}\tau\cos\bigg(\f{\tilde{\lambda}_+{+}\tilde{\lambda}_-}{2}+\bar{\varphi}\bigg)= \begin{cases} 0, & {\A}=+I \\
+                 \pm 1, & \A =-I\end{cases}.\la{c2breakdowndgncondition}
+\end{align}
+The adiabatic limit is given by $\tau{=}1$ and $\bar{\phi}{=}0$, which leads to the satisfaction of \q{c2breakdowndgncondition} for $l^2$ equal to an integer multiple of $2\pi/\delta S$. As noted  in \s{sec:introducecodimension}, such a periodicity  corresponds to a differential increment of a single, magnetic flux quantum. 
+
+Deviating from the adiabatic limit ($\tau{<}1$), we deduce from \q{c2breakdowndgncondition} that only $\A{=}I$ remains attainable by varying $B$; this is consistent with the codimension analysis of \q{proprashba}. The conditions $\A{=}I$ and $\rho{>}0$ are interpreted as a destructive interference of the two Feynman paths [illustrated in \red{[Fig]}] that an electron may take in tunneling between bands (over one cyclotron period) -- effectively, there are then two identical and independent orbits, which lead to a Landau-level quasidegeneracy. Such quasidegeneracies occur with  a periodicity in $l^2$ of $4\pi/\delta S$ (or two flux quanta). This periodicity is not affected by the additional phase $\bar{\phi}$ in the argument of the cosine function, because $\bar{\phi}$  varies on the scale  $2\pi/S_{\sma{\square}}$ [with  $S_{\sma{\square}}$ the area of the rectangle inscribed between the two hyperbolic arms  in Fig.\ \ref{fig:Cn-breakdown} (a)],\footnote{For $\bar{\varphi}(\bar{\mu})$ to vary  $\sim 1$, the Landau-Zener parameter $\bar{\mu}$ must vary by $\sim 1$;\footnote{See Fig.\ 10 in 100page} moreover, $2\pi\barmu{:}{=} (2\pi/8) l^2S_{\sma{\square}}$.[AALG]} which is much larger than
+ $4\pi/\delta S$. To recapitulate, half the Landau-level quasi-crossings (over the $B$ axis) are destabilized by tunneling; the robustness of the other half relies on $\mathfrak{c}_2$ symmetry.
+
+
 %The degeneracies alternate between $\cala{=}I$ and ${-}I$ on the B axis, hence the subset of degeneracies corresponding to $\cala{=}I$ (or ${-}I$) occur with a period of  $4\pi/\delta S$ (or two flux quanta).  
 
 %occurs if and only if $\rho{=}0$ and  $\exp[i(\delta \lambda_+{+}\bar{\varphi})]$ is real, while 
 
 
-Let us investigate the fate of these degeneracies as $\rho$ increases. While asymmetric interband tunneling generically destabilizes all degeneracies, we will demonstrate that two-fold-symmetric interband tunneling destabilizes only half of them. Indeed, the necessary condition for $\A\propto I$ is \e{\tau\cos(\f{\lambda_+'{+}\lambda_-'}{2}+\bar{\varphi})=\pm 1,0.\la{c2breakdowndgncondition}}
-for $\rho{>}0$, only 0 in Eq. (\ref{c2breakdowndgncondition}) is possible, destabilizing half of the degeneracies. \footnote{Notice cosine function reaches 0 twice in a period}
+%Let us investigate the fate of these degeneracies as $\rho$ increases. While asymmetric interband tunneling generically destabilizes all degeneracies, we will demonstrate that two-fold-symmetric interband tunneling destabilizes only half of them. Indeed, 
 
-Eq. (\ref{c2breakdowndgncondition}) with $0$ on the right hand side is the condition for destructive interference of the two Feynman paths that contribute to interband tunneling (as illustrated in \red{[Fig]}); this occurs with a period  of   $4\pi /\delta S$ (or two flux quanta). To appreciate this, consider that  for $(\lambda_+'{+}\lambda_-')/2$ to vary by $\pi$, $l^2$ must vary by $4\pi/\delta S$. On the other hand, the field dependence of the scattering phase is comparatively negligible: for $\bar{\varphi}(\bar{\mu})$ to vary  $\sim 1$, the Landau-Zener parameter $\bar{\mu}$ must vary by $\sim 1$;\footnote{See Fig.\ 10 in 100page} moreover, $2\pi\barmu{:}{=} (2\pi/8) l^2S_{\sma{\square}}$ with  $S_{\sma{\square}}$ the area of the rectangle inscribed between the two hyperbolic arms  (see inset of Fig. \ref{fig:Cn-breakdown} (a)); clearly $S_{\sma{\square}}{\ll}\delta S$.
+
+%for $\rho{>}0$, only 0 in Eq. (\ref{c2breakdowndgncondition}) is possible, destabilizing half of the degeneracies. \footnote{Notice cosine function reaches 0 twice in a period}
+
+%Eq. (\ref{c2breakdowndgncondition}) with $0$ on the right hand side is the condition for destructive interference of the two Feynman paths that contribute to interband tunneling (as illustrated in \red{[Fig]}); this occurs with a period  of   $4\pi /\delta S$ (or two flux quanta). 
+
 
 %$2\pi\bar{\mu}{\sim}l^2 S_{\sma{\square}}/8$ where $S_{\sma{\square}}$ is much smaller than $\delta S$ [see inset of Fig. \ref{fig:Cn-breakdown}(a)].
 
@@ -554,7 +578,10 @@ Eq. (\ref{c2breakdowndgncondition}) with $0$ on the right hand side is the condi
 
 %This  provides yet another  illustration of the general statement proposed in \s{sec:singleparameterrashba}: due to two-fold rotational symmetry, half the degeneracies have unit codimension, and the other half has codimension two. 
 
-An analogous model with $\mathfrak{c}_3$-related II-Dirac points  is illustrated in Fig. \ref{fig:Cn-breakdown}(b). The corresponding propagator $\A$ has a form analogous to \q{propC2breakdown} -- but with $(\cdot)^2$ replaced by $(\cdot)^3$, and with $\lambda_\pm'{=}\pm l^2\delta S/4$ replaced by $\pm l^2\delta S/6$ (plus a field-dependent geometric correction). The degeneracy condition is accordingly modified as $\tau\cos[(\lambda_+'{+}\lambda_-')/2{+}\bar{\varphi}]=\pm 1,\pm 1/2$. For nonzero tunneling ($\rho {>}0$), only $\pm 1/2$ is reachable where, of every three degeneracies that exist in the adiabatic limit ($\rho=0$), only two persist. $\tau=1/2$ marks a critical point where all degeneracies coalesce pairwise (on the $B$ axis) and annihilate. It is not hard to imagine the claim made in Sec. \ref{sec:singleparameterrashba} remains true: out of every $N$ degeneracies, $N-1$ of them are stable against $\mathfrak{c}_N$-symmetric breakdown (see App. \ref{app:codimension} for a proof).
+
+For our last illustration, we consider a II-Dirac model with $\mathfrak{c}_3$  symmetry, as   is illustrated in Fig. \ref{fig:Cn-breakdown}(b). The corresponding propagator $\A$ has a form analogous to \q{propC2breakdown} -- but with $(\cdot)^2$ replaced by $(\cdot)^3$, and with $\tilde{\lambda}_\pm{=}\pm l^2\delta S/4$ replaced by $\pm l^2\delta S/6$ (plus a field-dependent geometric correction). The degeneracy condition is  modified to $\tau\cos[(\tilde{\lambda}_+{+}\tilde{\lambda}_-)/2{+}\bar{\varphi}]{=}{\pm} 1,{\pm} 1/2$. With nonzero tunneling ($\rho {>}0$), only $\pm 1/2$ is attainable -- this implies that of every three degeneracies that exist in the adiabatic limit, only two are perturbatively stable. Beyond a critical field  (defined by $\tau{=}1/2$),   all degeneracies coalesce pairwise (on the $B$ axis) and annihilate. 
+
+We conclude this section with a general result that is valid for any integer $N{\geq}2$: of every $N$ quasi-crossings that exist in the adiabatic limit, $N{-}1$ of them are stable against tunneling that respects  $\mathfrak{c}_N$ symmetry. We prove this in App. \ref{app:codimension}.
 %$\cala{=}{\pm} I$ is attained if and only if  $\tau \cos(\delta \lambda_+{+}\bar{\varphi}){=}{\mp}1/2$.
 
 %There then are no more $B$-tunable degeneracies beyond a critical field where  $\tau{<}1/2$. 
@@ -562,8 +589,8 @@ An analogous model with $\mathfrak{c}_3$-related II-Dirac points  is illustrated
 %In the zero-tunneling limit ($\rho{=}0$), the condition for degeneracy (of $\cala$) is that $\exp[i(\phi_+{+}\bar{\varphi})]$ is a sixth root of unity -- the periodicity in $l^2$ corresponds to a single quantum of differential magnetic flux. 
 
 
-\textbf{A different realization of two-fold symmetric breakdown: angular magnetoresistance oscillations.}
-\red{[I begin to question this again. In my previous understanding, the in-plane magnetic field changes the band structure while the out-of-plane magnetic field produces LLs. Now I believe the in-plane magnetic field cannot be simply understood simply as a change in band structures. Therefore, I am not quite sure whether it is related to magnetic breakdown.]}
+\textbf{Bonus: A different realization of two-fold symmetric breakdown: angular magnetoresistance oscillations.}
+%\red{[I begin to question this again. In my previous understanding, the in-plane magnetic field changes the band structure while the out-of-plane magnetic field produces LLs. Now I believe the in-plane magnetic field cannot be simply understood simply as a change in band structures. Therefore, I am not quite sure whether it is related to magnetic breakdown.]}
 
 \subsection{The ten-fold table for symmetry constrained codimensions}\la{sec:tenfold}
 
@@ -580,8 +607,8 @@ An analogous model with $\mathfrak{c}_3$-related II-Dirac points  is illustrated
 4 & $\exists \bk \in \frako_0, g\circ \bk\ne\bk$    & 0 & 1 & & - & 1   \\
 5 &    & 1 & 0 & & $\breve{g} \propto \sigma_z$ & 2  \\
  &    &  &  & & $\breve{g} \not\propto \sigma_z$ & 0  \\
-6 &    & 1 & 1 & $\surd$ & $g^2=1$ & 2  \\
-&    &  &  & & $g^2=-1$ & 0  \\
+6 &  & 1 & 1 & $\surd$ & $g^2=1$ & 2  \\
+&  &  &  & & $g^2=-1$ & 0  \\
 7 & $|g\circ \frako_0| \ne |\frako_0|$ & 0 & 0 & $\surd$ & - & 3 \\
 8 &    & 0 & 1 & & - & 3 \\
 9 &    & 1 & 0 & & - & 3 \\
@@ -1080,7 +1107,7 @@ The other part $\mathcal{S}:=V_+^\dagger\A_2V_-$ is a standard Landau-Zener prob
 \end{equation}
 where $k_x=-k_F \cos(\omega_c t)$ and $k_y=k_F \sin(\omega_c t)$. Since $t_+-t_-\ll T_c$, we can keep only the linear terms in $t$,
 \begin{equation}
-\calh(t)\approx\alpha k_F \omega_c t\sigma_x+(Z_\parallel-\alpha k_F)\sigma_y-Z_\perp\sigma_z.
+\calh(t)\approx-\alpha k_F \omega_c t\sigma_x+(Z_\parallel-\alpha k_F)\sigma_y-Z_\perp\sigma_z.
 \end{equation}
 It is now obvious that $\mathcal{S}$ is a Landau-Zener problem: $\alpha k_F \omega_c t\sigma_x$ is linear in time; $(Z_\parallel-\alpha k_F)\sigma_y-Z_\perp\sigma_z$ is time independent; columns of $V_-$ and $V_+$ are approximately eigenvectors of $\sigma_x$. Therefore, $\mathcal{S}$ takes the form of a magnetic junction scattering matrix with
 \e{\mu=\frac{ml^2(Z_\perp^2+(Z_\parallel-\alpha k_F)^2)}{2\alpha k_F}.}
