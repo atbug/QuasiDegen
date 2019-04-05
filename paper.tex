@@ -13,15 +13,6 @@
 \usepackage[normalem]{ulem}
 \input{preamble}
 
-%\renewcommand{\topfraction}{.85}
-%\renewcommand{\bottomfraction}{.7}
-%\renewcommand{\textfraction}{.15}
-%\renewcommand{\floatpagefraction}{.66}
-%\renewcommand{\dbltopfraction}{.66}
-%\renewcommand{\dblfloatpagefraction}{.66}
-%\setcounter{topnumber}{3}
-%\setcounter{bottomnumber}{3}
-
 \begin{document}
 
 \title{Landau quantization of nearly degenerate bands, \\
@@ -43,9 +34,6 @@ In particular, only one parameter is needed {in the presence of} spatial rotatio
 \date{\today}
 
 \maketitle
-
-%n close analogy with the Wigner-von Neumann `non-crossing rule' in quantum mechanics, we find that three tunable parameters are needed to attain a Landau-level quasidegeneracy -- in the absence of crystalline point-group symmetries [cf.\ \s{sec:introducecodimension}]. 
-%We have further determined symmetric variants of the ‘non-crossing rule’ for Landau levels, for any spacetime symmetry that occurs in crystalline solids
 
 \section{Introduction}
 In the semiclassical theory of a Bloch electron in a magnetic field,  quantization rules not  only serve as a compact description of the  energy dispersion of Landau levels, they also form the basis for a quantitative theory of quantum oscillations in transport\cite{SdH} and thermodynamic\cite{dHvA} quantities.  The original formulation of the rule -- by Onsager\cite{Onsager} and Lifshitz\cite{lifshitz_kosevich,lifshitz_kosevich_jetp} -- neglects the effect of spin-orbit coupling. While subsequent generalizations by Roth\cite{rotheffham,rothmag}, Mikitik\cite{Mikitik_quantizationrule}, and the present authors\cite{topoferm,100p} account for the spin-orbit effect, such quantization rules apply only when the spin-orbit splitting of energy bands is much stronger (or much weaker) than the Zeeman interaction.
@@ -116,21 +104,9 @@ with $\{u_n\}_{n=1}^2$ the periodic component of Bloch functions.
 
 \qq{eq:rule}{berryconn} allow us to determine $\lambda_{1,2}$ to the lowest order  in $1/l^2|S|$ and $|\delta S/S|$, and for arbitrary finite values of $l^2|\delta S|$ and $|B\calm|/\delta \var_{\pm}$. We remark that the quantization rule is invariant under basis transformations within the nearly-degenerate band subspace (see App. \ref{app:quantizationruleproof}).  In subsequent case studies, it may be analytically convenient to adopt a $\bk$-independent basis for $\calh$, if such a basis exists; the non-abelian Berry connection -- defined with respect to this basis -- vanishes.
 
-%In other words,  \qq{eq:rule}{berryconn} is equally valid with $\{u_n\}_{n=1}^2$ replaced by energy eigenfunctions of $\hat{H}_0$ which are not simultaneously eigenfunctions of $\delta \hat{H}$. 
-
-%In subsequent case studies, it may be analytically convenient to adopt a $\bk$-independent basis, if such a basis exists; the non-abelian Berry connection defined with respect to this basis would vanish.
-
-%It will be useful to separate $B$-independent and $B$-dependent terms in \q{eq:H1}; the latter we denote as $B\calm$, with $\calm$ having the dimension of a magnetic moment. Let us explain each term in the order of its appearance.\\
-
-
-
-
-
 \subsection{Recovering the Onsager-Lifshitz-Roth quantization rules in two limits}\label{sec:recoveronsager}
 
 It is useful to compare $\delta \var$ with $B\calm$ in the basis of energy-split bands (labelled $\pm$): in the two regimes where one dominates over the other, \qq{eq:rule}{berryconn} reduce to the known Onsager-Lifshitz-Roth rules for (i) two independent, nondegenerate orbits, and for (ii) degenerate orbits.  \\
-
-%\footnote{Though the adiabatic limit does not exist for orbits that exactly intersect at type-II Dirac points, these orbits are nevertheless describable by our quantization rule, as exemplified in the case studies of \s{sec:inplanezeeman} and \s{sec:rotsymmbreakdown}.}}
 
 \noi{i} If $|\var_+{-}\var_-|$ is everywhere (along $\frako_0$) much greater than $B|\calm_{+-}|$, then an electron would undergo adiabatic (band-conserving) dynamics\cite{nenciu_review} along two independent, nondegenerate orbits. Such an adiabatic regime always exists as $B{\rightarrow} 0$ for nearly-degenerate orbits that do not intersect. (Such intersection occurs, e.g., at a type-II Dirac point, which is the subject of the case studies in \s{sec:inplanezeeman} and \s{sec:rotsymmbreakdown}.)
 By  neglecting  $B\calm_{+-}$ in favor of intraband elements,  $\cala$ reduces to a diagonal matrix with  diagonal entries ($e^{i\lambda_{\pm}}$) given by:
@@ -199,12 +175,10 @@ When $|\zpar|>|m\alpha^2|$, the Dirac cone tilts over in the $x$ direction, lead
 
 \begin{figure}
 \includegraphics[width=1.0\columnwidth]{RZ.png}
-\caption{(a) illustrates the cyclotron orbits of the Rashba 2DEG in a tilted magnetic field. The inset illustrates an enlarged view of near II-Dirac point. (b) illustrates the cyclotron orbit at the energy of the II-Dirac point; a Klein-tunneling electron will follow a trajectory that resembles the edge of a M\"obius strip. The orbit is drawn over the  spin-splitting field ($d_x,d_y$) of the degeneracy-lifting Hamiltonian $\delta\var$ [cf.\ \q{eq:RZ-Hamiltonian}]. The wavefunction along the inner (resp.\ outer) component of the M\"obius-strip orbit has its pseudospin aligned parallel (resp.\ anti-parallel) to the spin-splitting field. (c) schematically illustrates  Landau levels near the II-Dirac point (in the weak-hybridization regime). The dashed line represents the Onsager-Lifshitz-Roth quantization of the M\"obius-strip orbit [cf.\ Eq.\ (\ref{trefoilrule})], and the solid line incorporates the first-order correction [cf.\ Eq.\ (\ref{RZfirstorderE})] due to tunneling. (d) The black solid line is the plot of $\delta E_n$ [cf. Eq. (\ref{RZfirstorderE})], which is the energetic correction due to deviations from perfect Klein tunneling; for comparison, the red dashed line shows the numerically-exact deviations obtained from exact diagonalization. This comparison is made for the Landau levels closest to 0.45eV and with even Landau-level index $n$; for the parameters we have chosen ($m{=}0.076m_0$, $\alpha{=} 1.5\times10^{5}$cm/s, $Z_\parallel {=}$1meV and $g_{s\perp}=2$),  the II-Dirac point lies at 0.5eV. 
-%Out-of-plane Zeeman coupling is negligibly weak.
+\caption{(a) illustrates the cyclotron orbits of the Rashba 2DEG in a tilted magnetic field. The inset illustrates an enlarged view of near II-Dirac point. (b) illustrates the cyclotron orbit at the energy of the II-Dirac point; a Klein-tunneling electron will follow a trajectory that resembles the edge of a M\"obius strip. The orbit is drawn over the  spin-splitting field ($d_x,d_y$) of the degeneracy-lifting Hamiltonian $\delta\var$ [cf.\ \q{eq:RZ-Hamiltonian}]. The wavefunction along the inner (resp.\ outer) component of the M\"obius-strip orbit has its pseudospin aligned parallel (resp.\ anti-parallel) to the spin-splitting field. (c) schematically illustrates  Landau levels near the II-Dirac point (in the weak-hybridization regime). The dashed line represents the Onsager-Lifshitz-Roth quantization of the M\"obius-strip orbit [cf.\ Eq.\ (\ref{trefoilrule})], and the solid line incorporates the first-order correction [cf.\ Eq.\ (\ref{RZfirstorderE})] due to tunneling. (d) The black solid line is the plot of $\delta E_n$ [cf. Eq. (\ref{RZfirstorderE})], which is the energetic correction due to deviations from perfect Klein tunneling; for comparison, the red dashed line shows the numerically-exact deviations obtained from exact diagonalization. This comparison is made for the Landau levels closest to 0.45eV and with even Landau-level index $n$; for the parameters we have chosen ($m{=}0.076m_0$, $\alpha{=} 1.5\times10^{5}$cm/s, $Z_\parallel {=}$1meV and $g_{s\perp}=2$),  the II-Dirac point lies at 0.5eV.
 \label{fig:RZ}}
 \end{figure}
 
-%red dashed line shows the energetic difference between Landau levels determined by numerical diagonalization and Landau levels obtained by the M\"obius quantization rule  [cf.\ Eq.\ (\ref{trefoilrule})]; this red dashed line may be compared to the perturbative formula $\delta E_n$ [cf. Eq. (\ref{RZfirstorderE})], which is plotted as a black solid line.
 
 In addition to the in-plane field, let us also apply an out-of-plane field $B_{\perp}$, with associated magnetic length $\lper{=}\sqrt{\hbar/eB_{\perp}}$, cyclotron energy $\var^{\sma{\perp}}_c{:}{=}\hbar^2/m\lper^2{:}{=}\hbar \omega_c^{\sma{\perp}}{:}{=}h/T_c^{\sma{\perp}}$ and Zeeman coupling to the spin magnetic moment:  $\zper{:}{=}{g_{s\perp}}\mu_B B_{\perp}/2$. We shall assume  $1/\lper^2S{\ll}1$, where $S$ is the area of the zeroth-order orbit (with effective mass $m$ and radius $k_E{=}\sqrt{2mE}/\hbar$). For energies much greater than $m\alpha^2$ and $\zpar$, the nearly-degeneracy condition ($\delta S/S{\ll}1$) is met, where $\delta S$ is the differential area induced by both spin-orbit and in-plane Zeeman couplings [see \fig{fig:RZ}(b)].  The smallness of $1/\lper^2S$ and $\delta S/S$ (with finite ratio $\lper^2\delta S$) justifies our application of the quantization rule [\qq{eq:rule}{eq:H1}], with the effective Hamiltonian: 
 \begin{equation}
@@ -231,7 +205,7 @@ The adiabatic phase $\tilde{\lambda}_{\pm}$ is the sum of a dynamical phase ${\p
 
 \begin{figure}
 \includegraphics[width=1.0\columnwidth]{blochsphere.png}
-\caption{Solid-angle representation of  the single-band Berry phase $\phi_{\pm}^B$ for inner (subscript $-$, upper panel) and outer ($+$, lower panel) orbit, at various energies close to the Dirac-point energy $\epsilon_0$ [cf.\ Eq. (\ref{whereisdiracpoint})]. The decomposition of the effective Hamiltonian [cf.\ Eq. (\ref{calHRZ})] into  Pauli matrices ($\calh{=}\sum_j\calh_j\sigma_j$) defines a three-vector $\boldsymbol{\calh}{=}({-}\alpha k_y$,$\alpha k_x{+}Z_\parallel,{-}Z_\perp)$. $\phi_{\pm}^B$ equals half the solid angle subtended by   ${\mp} \boldsymbol{\calh}(\bk)$ [solid blue line] as $\bk$ is varied along the outer/inner orbit\cite{berry_quantal_1984}; the orientation of the solid angle is indicated by blue dotted lines. The out-of-plane Zeeman interaction lifts $\boldsymbol{\calh}$ out of the $x-y$ plane, but this effect is significant only over a fraction $(\sim Z_{\perp}/\hbar \alpha k_E)$  of the cyclotron period. % ${\sim}[(\bar{\mu}_{\sma{\text{min}}}/g_{s\perp})(m_0/m){\ll}1]$
+\caption{Solid-angle representation of  the single-band Berry phase $\phi_{\pm}^B$ for inner (subscript $-$, upper panel) and outer ($+$, lower panel) orbit, at various energies close to the Dirac-point energy $\epsilon_0$ [cf.\ Eq. (\ref{whereisdiracpoint})]. The decomposition of the effective Hamiltonian [cf.\ Eq. (\ref{calHRZ})] into  Pauli matrices ($\calh{=}\sum_j\calh_j\sigma_j$) defines a three-vector $\boldsymbol{\calh}{=}({-}\alpha k_y$,$\alpha k_x{+}Z_\parallel,{-}Z_\perp)$. $\phi_{\pm}^B$ equals half the solid angle subtended by   ${\mp} \boldsymbol{\calh}(\bk)$ [solid blue line] as $\bk$ is varied along the outer/inner orbit\cite{berry_quantal_1984}; the orientation of the solid angle is indicated by blue dotted lines. The out-of-plane Zeeman interaction lifts $\boldsymbol{\calh}$ out of the $x-y$ plane, but this effect is significant only over a fraction $(\sim Z_{\perp}/\hbar \alpha k_E)$  of the cyclotron period.
 \label{fig:blochsphere}}
 \end{figure}
 
@@ -289,8 +263,6 @@ $T_{l^2}$ above is the period (in $l^2$) of quantum oscillations -- in the absen
 
 To recapitulate, for every exact degeneracy of $\cala$, there exist, in close proximity, paired Landau levels which are  nearly degenerate in the sense of \qq{llquasideg}{llquasidegB}. Each such pair of Landau levels will be described as \textit{quasidegenerate}. 
 
-%\red{It is possible that a subset of these quasidegeneracies are in fact exact degeneracies, owing to Landau levels carrying different quantum numbers -- a subject we elaborate in \s{sec:discussion}.}
-
 \subsection{Codimension analysis without symmetry, and with band-conservation symmetry}\label{sec:introducecodimension}
 
 
@@ -333,7 +305,7 @@ The Rashba model suffers from an oversimplification -- continuous rotational sym
 \begin{equation}
  H_{RD}(\bk)=\frac{{\hbar^2}k^2}{2m}+\hbar\alpha(k_{x}\sigma_{y}-k_{y}\sigma_{x})+\hbar\beta(k_{x}\sigma_{x}-k_{y}\sigma_{y}).\label{hamRD}
 \end{equation}
-{For the Rashba-Dresselhaus 2DEG, $\A$ depends on $\alpha,~\beta,~l,~E,~m$ only through three independent parameters:}%$\hbar\alpha k_E /\var_c$, $\hbar\beta k_E /\var_c$ and $g_sm/m_0$, let us consider the three-dimensional parameter space:
+{For the Rashba-Dresselhaus 2DEG, $\A$ depends on $\alpha,~\beta,~l,~E,~m$ only through three independent parameters:}
 \e{\left( \f{\hbar\alpha k_{\sma{E}}}{\var_c},\f{\hbar\beta k_{\sma{E}}}{\var_c},g_{s\perp}\f{m}{m_0} \right){\in} \mathbb{R}^3. \la{parameter2}}  
 $\A(\hbar\alpha k_{\sma{E}}/\var_c,\hbar\beta k_{\sma{E}}/\var_c,g_{s\perp}m/m_0){=}{\pm} I$ then determines a set of concentric circles in the $\beta{=}0$ plane, as per the $\mathfrak{c}_{\infty}$-symmetric case study in \s{sec:ctsrot}. Moving off this plane, we find that $\A{=}I$ is satisfied in a  neighborhood of $\beta{=}0$, i.e., $\A{=}I$ defines a hypersurface in $\mathbb{R}^3$ that is illustrated in \fig{fig:dgn}(a). On the other hand, $\A{=}{-}I$ is not satisfied in the neighborhood of $\beta{=}0$, hence the circles associated to $\A{=}{-}I$ remain isolated as line nodes, as illustrated in \fig{fig:dgn}(b). To recapitulate, we have found that one of every two Landau-level crossings (those labelled by odd $j$) destabilize due to the symmetry reduction.
 
@@ -351,16 +323,12 @@ with $\sum_{j=1}^4r_j^2{=}1$. \q{proprashba} is a parametrization of the two-fol
 
 On the other hand, $\A{=}{-}I$ occurs if and only if $\br{=}(0,{\pm} 1,0)$. These two points are mapped to a path-connected line node confined to the $\alpha{=}0$ and $\beta{=}0$ planes [cf.\ \fig{fig:dgn}(b)]; the difference in codimension originates from the $\mathfrak{c}_{\infty}$ symmetry within these two planes (cf.\ \s{sec:ctsrot}), which was not accounted for in the $\mathfrak{c}_2$-symmetric analysis of \q{proprashba}.
 
-%Let us relate \q{proprashba} to the Rashba-Dresselhaus model. For any choice of parameters for $\calh$, the time-ordered exponential of $\calh$ (over half a period) is uniquely defined. This defines the map $f:(\hbar\alpha k_{\sma{E}}/\var_c,\hbar\beta k_{\sma{E}}/\var_c,g_sm/m_0){\rightarrow}\br$. For a sufficiently regular $f$, the inverse image -- of a $d_s$-dimensional submanifold in $\br$-space -- must have  dimension that is greater or equal to $d_s$. In particular, the inverse image of the path-connected hypersurface ($r_2{=}0$) is a path-connected hypersurface in the space of $(\hbar\alpha k_{\sma{E}}/\var_c,\hbar\beta k_{\sma{E}}/\var_c,g_sm/m_0)$, as illustrated in \fig{fig:dgn}(a).
-
 \subsection{Codimension reduction for 2DEG with distinct, symmetry-related II-Dirac points}\label{sec:rotsymmbreakdown}
 
 \begin{figure}
 \includegraphics[width=1.0\columnwidth]{Cn-breakdown.png}
 \caption{(a-b) Cyclotron orbits for $\mathfrak{c}_2$-symmetric [(a)] and $\mathfrak{c}_3$-symmetric [(b)] breakdown. Top right inset of (a) presents an enlarged view of the breakdown junction, where the purple rectangle has area $S_{\sma{\square}}$. (c) Klein tunneling limit of $\mathfrak{c}_2$-symmetric (upper) and $\mathfrak{c}_3$-symmetric (lower) breakdown cyclotron orbits. (d) Feynman paths that switch between bands through  one tunneling event. (e) Feynman paths that preserve the band index through either zero or two tunneling events. (f) Schematic Landau-level dispersion for $\mathfrak{c}_3$ symmetric breakdown with respect to $\tau$ at a fixed energy. For the plotted interval of $1/B$, there are three quasidegenerate points (indicated by solid dots) in the  limit of zero Landau-Zener tunneling ($\tau=1$). Only two of three quasidegeneracies are stable upon inclusion of tunneling. That is to say, two of three  two points extend into quasidegenerate lines (indicated by red dashed lines) as $\tau$ is decreased from unity, while the third point is isolated, i.e., the quasidegeneracy is immediately lost as $\tau$ is decreased. At $\tau=0.5$, the two quasidegenerate lines eventually merge and annihilate.\label{fig:Cn-breakdown}}
 \end{figure}
-
-%one of them is destabilized by infinitesimal hybridization ($\tau<1$, indicated by green dashed lines) and two of them remains stable until they annihilate at $\tau=0.5$ (indicated by red dashed line)
 
 In the adiabatic limit of two nearly-degenerate orbits, we have found (in \s{sec:introducecodimension}) that the codimension for $\cala{=}{\pm} I$ is unity. Here we investigate how this result changes as adiabaticity is relaxed by Landau-Zener tunneling -- that respects a discrete $N$-fold rotational symmetry ($\mathfrak{c}_N$). Since a II-Dirac cone is tilted in a special direction, a II-Dirac point cannot be the center of a rotational symmetry; the minimal model with $\mathfrak{c}_N$ symmetry thus requires $N$ distinct but symmetry-related II-Dirac points. For $N{=}2$, we will demonstrate that the codimension for $\cala{=}I$ (but not for $\cala{=}{-}I$) remains unity, in accordance with the symmetric-coordinate analysis of \q{proprashba}; the persistence of  Landau-level quasidegeneracies  (at finite tunneling probability) will be demystified in terms of the destructive interference of tunneling Feynman paths. For $N{=}3$, we will find that two of three Landau-level quasidegeneracies are perturbatively stable against tunneling, but even these will destabilize beyond a critical tunneling strength.
 
@@ -423,7 +391,6 @@ action on orbit & action on $\boldsymbol{k}$  & $u$ & $s$  & class label & $g$  
 \end{tabular}
 \caption{Symmetry-constrained codimensions for nearly-degenerate orbits, which fall into five symmetry classes (as numbered in the fifth column). This table is also applicable to exactly-degenerate orbits, which fall into ten symmetry classes -- five here, and five in  \tab{table:codimension-exactlydegen}. The first and second columns define how the symmetry acts on the cyclotron orbit. The next two columns inform us if the mapping $\bk{\rightarrow}g{\circ}\bk$ [cf.\ \q{gmapk}]  preserves ($u{=}0$) or inverts ($u{=}1$) the orientation of the orbit, and if $g$ preserves ($s{=}0$) or inverts ($s{=}1$) the arrow of time. The sixth column specifies additional conditions -- on the representation of $g$ -- which must be imposed to uniquely determine the codimension. $\breve{g}$ is defined as the diagonalized, unitary matrix representation of $g$ in the degenerate subspace of $\hat{H}_0$. For the reader's convenience, we present some commonly-encountered matrix representations for exactly-degenerate orbits in Tab.\ \ref{table:sewing-matrix}. The last column lists the symmetry-constrained codimensions [cf. Sec. \ref{sec:introducecodimension}]. \label{table:codimension-nearlydegen}}
 \end{table*}
-%the two-by-two propagator $\A$ -- for the five symmetry classes which apply to both nearly- and exactly-degenerate orbits. . 
 
 \begin{table*}
 \begin{tabular}{|c|c|c|c|c|c|c|}
